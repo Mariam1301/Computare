@@ -1,0 +1,119 @@
+$phone-size: 600px;
+
+.footer {
+	background-color: #131313;
+	padding-bottom: 30px;
+	min-height: max-content;
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	@media (max-width: $phone-size) {
+		min-height: 200px;
+	}
+
+	&-nav {
+		position: relative;
+		max-width: 92vw;
+		left: 4vw;
+		display: flex;
+		justify-content: space-between;
+		min-height: 150px;
+		align-items: center;
+		border-bottom: 1px solid #242424;
+		@media (max-width: $phone-size) {
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+			width: 100vw;
+			left: 0;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		&-title {
+			color: #fff;
+			font-family: 'FiraGO', sans-serif;
+			font-size: 18px;
+			text-decoration: none;
+			font-weight: 700;
+		}
+	}
+	&-links {
+		max-width: 550px;
+		display: flex;
+		flex-wrap: wrap;
+		@media (max-width: $phone-size) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+
+	&-link {
+		text-decoration: none;
+		font-family: 'FiraGO';
+		font-style: normal;
+		font-weight: 400;
+		white-space: nowrap;
+		color: #fff;
+		margin-right: 40px;
+		font-size: 14px;
+		margin-top: 20px;
+		@media (max-width: $phone-size) {
+			justify-self: center;
+			align-self: center;
+			margin-right: 0;
+		}
+		&.active {
+			font-weight: 600;
+		}
+	}
+
+	&-contact {
+		display: flex;
+		max-width: 92vw;
+		margin-left: 4vw;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 20px;
+		@media (max-width: $phone-size) {
+			flex-direction: column;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		&-icons {
+			display: flex;
+			justify-content: space-evenly;
+			width: 150px;
+			&-icon {
+				font-size: 20px;
+				color: #fff;
+				@media (max-width: $phone-size) {
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+			}
+		}
+		&-number {
+			color: #fff;
+			font-family: 'FiraGO';
+			font-size: 18px;
+			font-weight: 700;
+			letter-spacing: 0.012em;
+		}
+		&-email {
+			display: flex;
+			align-items: center;
+			a {
+				display: inline;
+				margin-left: 20px;
+				text-decoration: none;
+				color: #fff;
+				font-family: 'FiraGO';
+				font-weight: 700;
+				font-weight: 18px;
+			}
+		}
+	}
+}
