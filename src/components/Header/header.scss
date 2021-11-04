@@ -1,0 +1,43 @@
+@import '~fontsource-firago/index.css';
+
+.header {
+	background-color: #f1f3f6;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3% 11%;
+	.logo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+		a {
+			color: #131313;
+			font-size: 18px;
+		}
+	}
+	.nav-links-div {
+		display: flex;
+		gap: 40px;
+		a {
+			font-family: 'FiraGO';
+
+			color: #131313;
+			font-size: 14px;
+			padding: 16px 0px 16px 0px;
+			border-radius: 50px;
+		}
+	}
+}
+
+.highlight {
+	padding: 16px 32px 16px 32px !important;
+	color: #ffffff !important;
+	background: linear-gradient(258.03deg, #ebff5f -0.9%, #6abd0d 100%);
+}
+
+.vertical-line {
+	background-color: #c4c4c4;
+	width: 1px;
+	height: 26px;
+}
