@@ -28,6 +28,63 @@
 .header .logo a {
   color: #131313;
   font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header .hamburger-menu {
+  z-index: 3;
+  position: relative;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .hamburger-menu .menu-btn {
+  background-color: #131313;
+  width: 40px;
+  height: 4px;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .hamburger-menu .menu-btn::before, .header .hamburger-menu .menu-btn::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background-color: #131313;
+  border-radius: 5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.header .hamburger-menu .menu-btn::before {
+  -webkit-transform: translateY(-9px);
+          transform: translateY(-9px);
+}
+
+.header .hamburger-menu .menu-btn::after {
+  -webkit-transform: translateY(9px);
+          transform: translateY(9px);
+}
+
+@media (max-width: 750px) {
+  .header .hamburger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header .nav-links-div {
@@ -35,24 +92,111 @@
   display: -ms-flexbox;
   display: flex;
   gap: 40px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .header .nav-links-div a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  font-family: 'FiraGO', sans-serif;
   color: #131313;
   font-size: 14px;
   padding: 16px 0px 16px 0px;
   border-radius: 50px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
-.highlight {
-  padding: 16px 32px 16px 32px !important;
-  color: #ffffff !important;
+.header .nav-links-div a:hover {
+  color: #6abd0d;
+}
+
+.header .nav-links-div .active::after {
+  content: '';
+  position: absolute;
+  left: 40%;
+  top: 35px;
+  margin-top: 5px;
+  width: 8px;
+  height: 8px;
   background: linear-gradient(258.03deg, #ebff5f -0.9%, #6abd0d 100%);
+  border-radius: 50%;
+}
+
+@media (max-width: 750px) {
+  .header .nav-links-div .active::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .header .nav-links-div {
+    display: none;
+  }
+}
+
+.open-menu {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  position: absolute !important;
+  z-index: 2;
+  width: 50%;
+  padding: 20px 20px;
+  -webkit-box-pack: left !important;
+      -ms-flex-pack: left !important;
+          justify-content: left !important;
+  -webkit-box-align: left !important;
+      -ms-flex-align: left !important;
+          align-items: left !important;
+  top: 2px;
+  right: 0px;
+  background-color: #f1f3f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.open-menu a {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
+.open-menu a:not(:last-child) {
+  padding-left: 10px !important;
 }
 
 .vertical-line {
   background-color: #c4c4c4;
   width: 1px;
   height: 26px;
+}
+
+.open .menu-btn {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  background: transparent !important;
+}
+
+.open .menu-btn::before {
+  -webkit-transform: rotate(45deg) translate(35px, -35px) !important;
+          transform: rotate(45deg) translate(35px, -35px) !important;
+}
+
+.open .menu-btn::after {
+  -webkit-transform: rotate(-45deg) translate(35px, 35px) !important;
+          transform: rotate(-45deg) translate(35px, 35px) !important;
 }
 /*# sourceMappingURL=header.css.map */
