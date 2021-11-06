@@ -23,9 +23,8 @@ const ExpertGuides = () => {
 								view all <BiRightArrowAlt />
 							</Link>
 							<div className='guide-info-description'>
-								{guide.info.map((i) => {
-									return <p>{i}</p>
-								})}
+								<p>{guide.info[0]}</p>
+								<p>{guide.info[1]}</p>
 							</div>
 						</div>
 					</div>

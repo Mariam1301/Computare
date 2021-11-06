@@ -1,10 +1,13 @@
 import { Route, Routes } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
+import AboutUs from './Pages/AboutUs/AboutUs'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import ExpertGuides from './components/ExpertGuides/ExpertGuides'
+import Prices from './components/Prices/Prices'
+import AllServices from './components/AllServices/AllServices'
 import SingleExpertGuide from './Pages/SingleExpertGuide/SingleExpertGuide'
 import './App.css'
-import { BrowserRouter } from 'react-router-dom'
 
 function App() {
 	return (
@@ -12,6 +15,9 @@ function App() {
 			<Header />
 			<Routes>
 				<Route path='/guides/:id' element={<SingleExpertGuide />} />
+				<Route path='/prices' element={<Prices />} />
+				<Route path='/services' element={<AllServices />} />
+				<Route path='/about-us' element={<AboutUs />} />
 				<Route path='/' element={<ExpertGuides />} />
 			</Routes>
 			<Footer />
