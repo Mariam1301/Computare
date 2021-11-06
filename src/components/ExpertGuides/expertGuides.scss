@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600&display=swap');
+
+.guides {
+	margin-top: 60px;
+	margin-bottom: 60px;
+	display: flex;
+	position: relative;
+	left: 5vw;
+	width: 90vw;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+}
+
+.guide {
+	&-container {
+		overflow: hidden;
+	}
+	&-img {
+		border-radius: 29px;
+		width: 255px;
+		height: 250px;
+		overflow: hidden;
+	}
+	&-info {
+		font-weight: 500;
+		color: #131313;
+		display: flex;
+		flex-direction: column;
+		max-width: 245px;
+		position: relative;
+		left: 5px;
+		&-title {
+			font-size: 24px;
+			font-family: 'Fira Sans', sans-serif;
+			font-weight: 500;
+		}
+		&-description {
+			max-height: 110px;
+			text-overflow: ellipsis;
+		}
+		p {
+			margin-top: 10px;
+		}
+		a {
+			text-decoration: none;
+			color: #6abd0d;
+			display: flex;
+			align-items: center;
+			margin-top: 20px;
+		}
+	}
+}
