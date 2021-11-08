@@ -7,6 +7,7 @@ import ExpertGuides from './components/ExpertGuides/ExpertGuides';
 import Prices from './components/Prices/Prices';
 import AllServices from './components/AllServices/AllServices';
 import SingleExpertGuide from './Pages/SingleExpertGuide/SingleExpertGuide';
+import Homepage from './Pages/homePage/HomePage';
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 				<Route path='/prices' element={<Prices />} />
 				<Route path='/services' element={<AllServices />} />
 				<Route path='/about-us' element={<AboutUs />} />
+				<Route path='/' element={<Homepage />} />
 				<Route path='/' element={<ExpertGuides />} />
 			</Routes>
 			<Footer />
