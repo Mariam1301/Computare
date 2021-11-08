@@ -44,7 +44,19 @@ const renderInfo = () => {
 }
 
 function AboutUs() {
-	return renderInfo()
+	return (
+		<>
+			<div className='aboutUs-title-container'>
+				<h2>About Us</h2>
+				<p>
+					We are a team of professionals with expertise in various fields such
+					as accounting, finance, Law.
+				</p>
+			</div>
+
+			{renderInfo()}
+		</>
+	)
 }
 
 export default AboutUs
