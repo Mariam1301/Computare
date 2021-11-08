@@ -1,0 +1,26 @@
+$phone-size: 750px;
+
+.home-page-services {
+	display: flex;
+	flex-direction: column;
+	padding: 7% 11%;
+	gap: 70px;
+	align-items: center;
+
+	h2 {
+		font-family: FiraGO;
+		font-weight: bold;
+		font-size: 36px;
+		line-height: 50px;
+		color: #131313;
+	}
+	&-div {
+		display: flex;
+		align-items: flex-start;
+		gap: 30px;
+
+		@media (max-width: $phone-size) {
+			flex-direction: column;
+		}
+	}
+}

@@ -6,7 +6,9 @@ $phone-size: 750px;
 	justify-content: space-between;
 	align-items: center;
 	padding: 3% 11%;
-
+	margin: 10px 10px 0px 10px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 	.logo {
 		display: flex;
 		justify-content: center;
@@ -29,6 +31,7 @@ $phone-size: 750px;
 		height: 80px;
 		cursor: pointer;
 		transition: all 0.5s ease-in-out;
+
 		.menu-btn {
 			background-color: #131313;
 			width: 40px;
@@ -54,6 +57,7 @@ $phone-size: 750px;
 		}
 
 		@media (max-width: $phone-size) {
+			transform: translateX(35px);
 			display: flex;
 		}
 	}
@@ -71,7 +75,6 @@ $phone-size: 750px;
 			color: #131313;
 			font-size: 14px;
 			padding: 16px 0px 16px 0px;
-			border-radius: 50px;
 			transition: 0.3s ease-in-out;
 			&:hover {
 				color: #6abd0d;
@@ -102,7 +105,7 @@ $phone-size: 750px;
 	flex-direction: column !important;
 	position: absolute !important;
 	z-index: 2;
-	width: 50%;
+	width: 60%;
 	padding: 20px 20px;
 	justify-content: left !important;
 	align-items: left !important;
@@ -110,6 +113,8 @@ $phone-size: 750px;
 	right: 0px;
 	background-color: #f1f3f6;
 	transition: all 0.5s ease-in-out;
+	border-radius: 30px;
+	margin: 10px 10px 0px 10px;
 	a {
 		width: fit-content !important;
 		&:not(:last-child) {

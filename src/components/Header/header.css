@@ -10,6 +10,9 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 3% 11%;
+  margin: 10px 10px 0px 10px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .header .logo {
@@ -81,6 +84,8 @@
 
 @media (max-width: 750px) {
   .header .hamburger-menu {
+    -webkit-transform: translateX(35px);
+            transform: translateX(35px);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -110,7 +115,6 @@
   color: #131313;
   font-size: 14px;
   padding: 16px 0px 16px 0px;
-  border-radius: 50px;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
@@ -153,7 +157,7 @@
           flex-direction: column !important;
   position: absolute !important;
   z-index: 2;
-  width: 50%;
+  width: 60%;
   padding: 20px 20px;
   -webkit-box-pack: left !important;
       -ms-flex-pack: left !important;
@@ -166,6 +170,8 @@
   background-color: #f1f3f6;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  border-radius: 30px;
+  margin: 10px 10px 0px 10px;
 }
 
 .open-menu a {

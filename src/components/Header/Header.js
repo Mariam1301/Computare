@@ -1,11 +1,11 @@
-import React from 'react'
-import './header.css'
-import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
-import Button from '../commons/Button/Button'
+import React from 'react';
+import './header.css';
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import Button from '../commons/Button/Button';
 
 export default function Header() {
-	const [menuOpen, setMenuOpen] = useState(false)
+	const [menuOpen, setMenuOpen] = useState(false);
 	return (
 		<div className='header'>
 			<div className='logo'>
@@ -38,5 +38,5 @@ export default function Header() {
 				<div className='menu-btn'></div>
 			</div>
 		</div>
-	)
+	);
 }
