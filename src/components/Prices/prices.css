@@ -10,6 +10,7 @@
   gap: 30px;
   margin-top: 60px;
   margin-bottom: 60px;
+  max-width: 95vw;
 }
 
 .price-best-outer {
@@ -18,8 +19,14 @@
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  right: -30px;
-  top: -30px;
+  right: -25px;
+  top: -25px;
+}
+
+@media (max-width: 700px) {
+  .price-best-outer {
+    right: -20px;
+  }
 }
 
 .price-best-inner {
@@ -59,6 +66,12 @@
   height: 500px;
   border-radius: 30px;
   margin-left: 30px;
+}
+
+@media (max-width: 700px) {
+  .price-outer {
+    margin-left: 10px;
+  }
 }
 
 .price-inner {
@@ -159,5 +172,8 @@
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
 }
-/*# sourceMappingURL=Prices.css.map */
+/*# sourceMappingURL=prices.css.map */

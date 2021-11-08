@@ -20,9 +20,9 @@ export default function Header() {
 				<NavLink className='navlink' to={''}>
 					Home
 				</NavLink>
-				<Link className='navlink' to={''}>
+				<NavLink className='navlink' to={'/services'}>
 					Services
-				</Link>
+				</NavLink>
 				<NavLink className='navlink' to={'/prices'}>
 					Prices
 				</NavLink>

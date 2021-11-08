@@ -1,19 +1,27 @@
-import './App.css';
+import { Route, Routes } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import AboutUs from './Pages/AboutUs/AboutUs';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter } from 'react-router-dom';
-import { Route, Routes } from 'react-router';
+import ExpertGuides from './components/ExpertGuides/ExpertGuides';
+import Prices from './components/Prices/Prices';
+import AllServices from './components/AllServices/AllServices';
+import SingleExpertGuide from './Pages/SingleExpertGuide/SingleExpertGuide';
+import './App.css';
 
 function App() {
 	return (
-		<div>
-			{/* <h1>I love you Marmaarr</h1> */}
-			<h1>hello</h1>
+		<BrowserRouter>
 			<Header />
-			<Routes></Routes>
+			<Routes>
+				<Route path='/guides/:id' element={<SingleExpertGuide />} />
+				<Route path='/prices' element={<Prices />} />
+				<Route path='/services' element={<AllServices />} />
+				<Route path='/about-us' element={<AboutUs />} />
+				<Route path='/' element={<ExpertGuides />} />
+			</Routes>
 			<Footer />
-			{/* <Footer /> */}
-		</div>
+		</BrowserRouter>
 	);
 }
 
