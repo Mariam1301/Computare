@@ -29,6 +29,10 @@
 	}
 
 	&-title-container {
+		margin-left: 10px;
+		margin-right: 10px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

@@ -28,6 +28,10 @@
 }
 
 .aboutUs-title-container {
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
