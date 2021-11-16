@@ -1,0 +1,44 @@
+$phone-size: 750px;
+
+.contact {
+	&-title {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #f1f3f6;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+		margin: 0px 10px 10px 10px;
+		h1 {
+			font-family: 'Fira Sans', sans-serif;
+			padding: 80px 0px;
+			font-size: 46px;
+			text-align: center;
+			padding-right: auto;
+			padding-left: auto;
+		}
+	}
+	&-info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 100px 150px;
+		@media (max-width: $phone-size) {
+			flex-direction: column;
+			gap: 100px;
+			justify-content: center;
+		}
+		&-details {
+			padding: 5px;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			p {
+				font-family: FiraGO;
+				font-size: 20px;
+				line-height: 34px;
+			}
+		}
+	}
+}

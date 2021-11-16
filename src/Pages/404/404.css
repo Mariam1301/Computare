@@ -1,0 +1,33 @@
+.page-not-found-header {
+  height: 50px;
+  background-color: #f1f3f6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 0px 10px 10px 10px;
+}
+
+.page-not-found {
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-not-found h1 {
+  padding: 0% 11%;
+  font-family: 'FiraGO', sans-serif;
+  color: #131313;
+  font-size: 80px;
+}
+/*# sourceMappingURL=404.css.map */

@@ -17,7 +17,7 @@ const Homepage = () => {
 						environment, by providing services that are both in compliance with
 						local law and also are unique to the needs of each client.
 					</p>
-					<Button label='prices' linkTo={'/'} />
+					<Button label='Prices' linkTo={'/prices'} />
 				</div>
 				<img src={welcome}></img>
 			</div>
