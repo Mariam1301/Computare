@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react'
 import './aboutUs.css'
 
 const renderInfo = () => {
@@ -44,8 +45,11 @@ const renderInfo = () => {
 }
 
 function AboutUs() {
+	useEffect(() => {
+		window.scroll({ top: 0, behavior: 'smooth' })
+	}, [])
 	return (
-		<>
+		<React.Fragment>
 			<div className='aboutUs-title-container'>
 				<h2>About Us</h2>
 				<p>
@@ -55,7 +59,7 @@ function AboutUs() {
 			</div>
 
 			{renderInfo()}
-		</>
+		</React.Fragment>
 	)
 }
 

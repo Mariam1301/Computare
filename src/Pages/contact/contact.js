@@ -1,7 +1,10 @@
-import React from 'react';
-import './contact.css';
-import { Map, GoogleApiWrapper, mapStyles, google } from 'google-maps-react';
+import React from 'react'
+import { useEffect } from 'react'
+import './contact.css'
 const Contact = () => {
+	useEffect(() => {
+		window.scroll({ top: 0, behavior: 'smooth' })
+	}, [])
 	return (
 		<div className='contact'>
 			<div className='contact-title'>
@@ -25,7 +28,7 @@ const Contact = () => {
 				</div>
 			</div>
 		</div>
-	);
-};
+	)
+}
 
-export default Contact;
+export default Contact

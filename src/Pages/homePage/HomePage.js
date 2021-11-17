@@ -1,12 +1,15 @@
-import React from 'react';
-import welcome from './images/welcome.png';
-import ServiceSection from '../../components/seviceSection/serviceSection';
-import ExpertGuides from './../../components/ExpertGuides/ExpertGuides';
-
-import './home.css';
-import Button from './../../components/commons/Button/Button';
+import React from 'react'
+import { useEffect } from 'react'
+import welcome from './images/welcome.png'
+import ServiceSection from '../../components/seviceSection/serviceSection'
+import ExpertGuides from './../../components/ExpertGuides/ExpertGuides'
+import Button from './../../components/commons/Button/Button'
+import './home.css'
 
 const Homepage = () => {
+	useEffect(() => {
+		window.scroll({ top: 0, behavior: 'smooth' })
+	}, [])
 	return (
 		<div className='home-page'>
 			<div className='welcome'>
@@ -24,7 +27,7 @@ const Homepage = () => {
 			<ServiceSection />
 			<ExpertGuides />
 		</div>
-	);
-};
+	)
+}
 
-export default Homepage;
+export default Homepage

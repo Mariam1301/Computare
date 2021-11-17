@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
-import 'fontsource-firago/400.css';
-import './footer.css';
+import React, { Fragment } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FiMail } from 'react-icons/fi'
+import 'fontsource-firago/400.css'
+import './footer.css'
 
 const Footer = (props) => {
 	const renderLinks = () => {
@@ -12,25 +12,24 @@ const Footer = (props) => {
 				<NavLink className='footer-link' to='/'>
 					Home
 				</NavLink>
-
 				<NavLink className='footer-link' to='/prices'>
 					Prices
 				</NavLink>
 				<NavLink className='footer-link' to='/about-us'>
 					About us
 				</NavLink>
-				<NavLink className='footer-link' to='/s'>
+				<NavLink className='footer-link' to='/'>
 					Cookies
 				</NavLink>
-				<NavLink className='footer-link' to='/a'>
+				<NavLink className='footer-link' to='/'>
 					Privacy Notice
 				</NavLink>
-				<NavLink className='footer-link' to='/d'>
+				<NavLink className='footer-link' to='/'>
 					Terms of Engagement
 				</NavLink>
 			</div>
-		);
-	};
+		)
+	}
 
 	const renderFooterIcons = () => {
 		return (
@@ -45,8 +44,8 @@ const Footer = (props) => {
 					<FaInstagram className='footer-contact-icons-icon' />
 				</Link>
 			</div>
-		);
-	};
+		)
+	}
 
 	return (
 		<Fragment>
@@ -69,7 +68,7 @@ const Footer = (props) => {
 				</div>
 			</footer>
 		</Fragment>
-	);
-};
+	)
+}
 
-export default Footer;
+export default Footer
