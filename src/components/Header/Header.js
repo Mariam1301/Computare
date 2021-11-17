@@ -1,41 +1,41 @@
-import React from 'react';
-import './header.css';
-import { useState, useEffect } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { useRef } from 'react';
-import Button from '../commons/Button/Button';
-import ServiceDropdown from '../serviceDropdown/serviceDropdown';
+import React from 'react'
+import './header.css'
+import { useState, useEffect } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { useRef } from 'react'
+import Button from '../commons/Button/Button'
+import ServiceDropdown from '../serviceDropdown/serviceDropdown'
 
 export default function Header() {
-	const [menuOpen, setMenuOpen] = useState(false);
-	const [serviceOpen, setServiceOpen] = useState(false);
+	const [menuOpen, setMenuOpen] = useState(false)
+	const [serviceOpen, setServiceOpen] = useState(false)
 
 	const handleServiceOpen = () => {
-		setServiceOpen(!serviceOpen);
-	};
+		setServiceOpen(!serviceOpen)
+	}
 
 	const handleServiceClick = () => {
-		setMenuOpen(!menuOpen);
-		setServiceOpen(false);
-	};
-	let servicesRef = useRef();
-	let menuRef = useRef();
+		setMenuOpen(!menuOpen)
+		setServiceOpen(false)
+	}
+	let servicesRef = useRef()
+	let menuRef = useRef()
 	useEffect(() => {
 		let handler = (e) => {
-			if (!servicesRef.current.contains(e.target)) setServiceOpen(false);
+			if (!servicesRef.current.contains(e.target)) setServiceOpen(false)
 			if (
 				!menuRef.current.contains(e.target) &&
 				e.target.className === 'hamburger-menu'
 			)
-				setMenuOpen(false);
-		};
+				setMenuOpen(false)
+		}
 
-		document.addEventListener('mousedown', handler);
+		document.addEventListener('mousedown', handler)
 
 		return () => {
-			document.removeEventListener('mousedown', handler);
-		};
-	});
+			document.removeEventListener('mousedown', handler)
+		}
+	})
 	return (
 		<React.Fragment>
 			<div className='header'>
@@ -78,5 +78,5 @@ export default function Header() {
 				</div>
 			</div>
 		</React.Fragment>
-	);
+	)
 }

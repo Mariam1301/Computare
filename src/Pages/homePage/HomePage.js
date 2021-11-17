@@ -22,7 +22,7 @@ const Homepage = () => {
 					</p>
 					<Button label='Prices' linkTo={'/prices'} />
 				</div>
-				<img src={welcome}></img>
+				<img src={welcome} alt=''></img>
 			</div>
 			<ServiceSection />
 			<ExpertGuides />

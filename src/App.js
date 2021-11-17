@@ -1,18 +1,15 @@
-import { Route, Routes, Navigate } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
-import AboutUs from './Pages/AboutUs/AboutUs';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import ExpertGuides from './components/ExpertGuides/ExpertGuides';
-import Prices from './components/Prices/Prices';
-import AllServices from './components/AllServices/AllServices';
-import SingleExpertGuide from './Pages/SingleExpertGuide/SingleExpertGuide';
-import Homepage from './Pages/homePage/HomePage';
-import PricesPage from './Pages/Prices/PricesPage';
-import { useState } from 'react';
-import Fof from './Pages/404/404';
-import './App.css';
-import Contact from './Pages/contact/contact';
+import { Route, Routes } from 'react-router'
+import { BrowserRouter } from 'react-router-dom'
+import AboutUs from './Pages/AboutUs/AboutUs'
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
+import AllServices from './components/AllServices/AllServices'
+import SingleExpertGuide from './Pages/SingleExpertGuide/SingleExpertGuide'
+import Homepage from './Pages/homePage/HomePage'
+import PricesPage from './Pages/Prices/PricesPage'
+import Fof from './Pages/404/404'
+import Contact from './Pages/contact/contact'
+import './App.css'
 
 function App() {
 	return (
@@ -31,7 +28,7 @@ function App() {
 			</Routes>
 			<Footer />
 		</BrowserRouter>
-	);
+	)
 }
 
-export default App;
+export default App

@@ -44,7 +44,9 @@ const allServicesObj = [
 	},
 ]
 
-export default {
+const objs = {
 	popularServicesObj,
 	allServicesObj,
 }
+
+export default objs

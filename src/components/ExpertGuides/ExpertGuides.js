@@ -4,10 +4,6 @@ import { BiRightArrowAlt } from 'react-icons/bi'
 import './expertGuides.css'
 import 'fontsource-firago/400.css'
 
-const handleClick = (e) => {
-	console.log(e)
-}
-
 const ExpertGuides = () => {
 	return (
 		<div className='guides'>

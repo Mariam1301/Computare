@@ -13,6 +13,12 @@
   max-width: 95vw;
 }
 
+@media (max-width: 650px) {
+  .prices {
+    max-width: 100vw;
+  }
+}
+
 .price-best-outer {
   position: absolute;
   z-index: 2;
@@ -23,9 +29,9 @@
   top: -25px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .price-best-outer {
-    right: -20px;
+    right: 10px;
   }
 }
 
@@ -68,9 +74,10 @@
   margin-left: 30px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
   .price-outer {
-    margin-left: 10px;
+    margin-left: 0;
+    width: 310px;
   }
 }
 
@@ -82,6 +89,12 @@
   left: 1px;
   top: 1px;
   border-radius: 30px;
+}
+
+@media (max-width: 650px) {
+  .price-inner {
+    width: 308px;
+  }
 }
 
 .price-title-container {
@@ -109,6 +122,7 @@
   margin-top: 30px;
   font-weight: bold;
   font-size: 22px;
+  text-align: center;
 }
 
 .price-title-container-feeOpt {
@@ -121,6 +135,12 @@
   margin-top: 25px;
   font-weight: 700;
   font-size: 28px;
+}
+
+@media (max-width: 650px) {
+  .price-title-container {
+    width: 298px;
+  }
 }
 
 .price-offers {
@@ -150,6 +170,12 @@
   font-size: 20px;
 }
 
+@media (max-width: 650px) {
+  .price-offers {
+    width: 290px;
+  }
+}
+
 .price-button {
   color: #fff;
   position: absolute;
@@ -175,5 +201,11 @@
   font-size: 19px;
   font-weight: 600;
   letter-spacing: 0.1px;
+}
+
+@media (max-width: 650px) {
+  .price-button {
+    width: 290px;
+  }
 }
 /*# sourceMappingURL=prices.css.map */

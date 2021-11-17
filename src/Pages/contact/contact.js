@@ -24,6 +24,7 @@ const Contact = () => {
 						style={{ border: '0' }}
 						allowfullscreen=''
 						loading='lazy'
+						title='Address'
 					></iframe>
 				</div>
 			</div>

@@ -1,22 +1,18 @@
-import React from 'react';
-import Prices from '../../components/Prices/Prices';
-import { useEffect } from 'react';
-import './pricesPage.css';
+import React from 'react'
+import Prices from '../../components/Prices/Prices'
+import { useEffect } from 'react'
+import './pricesPage.css'
 
 export default function PricesPage() {
 	useEffect(() => {
-		window.scroll({ top: 0, behavior: 'smooth' });
-	}, []);
+		window.scroll({ top: 0, behavior: 'smooth' })
+	}, [])
 	return (
 		<>
 			<div className='pricesPage-title'>
 				<h2>Prices</h2>
-				<p>
-					It is a long established fact that a reader will be distracted by the
-					readable content of a page when looking at its layout.
-				</p>
 			</div>
 			<Prices />
 		</>
-	);
+	)
 }
