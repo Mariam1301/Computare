@@ -1,3 +1,11 @@
+.singleExpert-header {
+  height: 50px;
+  background-color: #f1f3f6;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  margin: 0px 10px 10px 10px;
+}
+
 .singleExpert-container {
   margin-top: 60px;
   margin-bottom: 60px;
